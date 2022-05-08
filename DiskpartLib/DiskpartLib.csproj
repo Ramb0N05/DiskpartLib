@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netstandard2.0;netstandard2.1;net48;net47;net46;net45;net40;net35</TargetFrameworks>
+    <Authors>Ramon Rosin</Authors>
+    <Company>SharpRambo</Company>
+    <PackageLicenseExpression>CC-BY-SA-4.0</PackageLicenseExpression>
+    <NeutralLanguage>en-150</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1-gpl</Version>
+    <Description>Library to access basic Diskpart functionalities on Windows machines.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtensionsLib" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
